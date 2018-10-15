@@ -10,18 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <PackageReference Include="Microsoft.ML" Version="0.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="0.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Data\abalone.data">
+    <None Update="Data\abalone.data.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\abalone.names">
+    <None Update="Data\abalone.names.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
